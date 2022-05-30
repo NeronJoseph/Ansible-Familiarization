@@ -1,0 +1,11 @@
+-
+  name: Create Users
+  hosts: localhost
+  tasks: 
+    -
+      user: name='{{ item }}' state=present
+      with_items:
+        - neron
+        - joseph
+        - jane
+        - doe

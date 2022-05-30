@@ -1,0 +1,10 @@
+-
+  name: View config files
+  hosts: localhosts
+  tasks:
+    -
+      debug: var=item
+      with_file:
+        - "/etc/hosts"
+        - "/etc/resolv.conf"
+        - "/etc/ntp.conf"

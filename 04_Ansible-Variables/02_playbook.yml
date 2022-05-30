@@ -1,0 +1,39 @@
+-
+  name: Add a DNS server to resolv.conf 
+  hosts: localhost
+  vars:
+    dns_server: 10.1.250.10 
+  tasks:
+    -
+      lineinfile:
+        path: /etc/resolv.conf
+        line: 'nameserver {{ dns_server }}'
+    -
+      name: 'Update nameserver entry into resolv.conf file'
+      lineinfile:
+        path: /etc/resolv.conf
+        line: 'nameserver {{ nameserver_ip }}'
+    -
+      name: 'Disable SNMP Port'
+      firewalld:
+        port: '{{ snmp_port }}'
+        permanent: true
+        state: disabled
+
+-
+  name: 'Update nameserver entry into resolv.conf file on localhost'
+  hosts: localhost
+  vars: 
+    car_model: 'BMW M3'
+    country_name: 'USA'
+    title: 'Systems Engineer'
+  tasks:
+    -
+      name: 'Print my car model'
+      command: 'echo "My car''s model is {{ car_model }}"'
+    -
+      name: 'Print my country'
+      command: 'echo "I live in the {{ country_name }}"'
+    -
+      name: 'Print my title'
+      command: 'echo "I work as a {{ title }}"'

@@ -1,0 +1,18 @@
+- Color: Blue
+  Model: 
+    Name: Corvette
+    Year: 1995
+  Transition: Manual
+  Price: $20,000
+- Color: Gray
+  Model: 
+    Name: Corvette
+    Year: 1995
+  Transition: Manual
+  Price: $22,000
+- Color: White
+  Model: 
+    Name: Corvette
+    Year: 1998
+  Transition: Manual
+  Price: $25,000
