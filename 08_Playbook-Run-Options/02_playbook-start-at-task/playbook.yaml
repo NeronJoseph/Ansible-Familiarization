@@ -1,0 +1,13 @@
+-
+  name: Play 1
+  hosts: localhost
+  tasks: 
+    - name: Install httpd service
+      yum: 
+        name: httpd
+        state: present
+
+    - name: Start httpd server 
+      service: 
+        name: httpd
+        state: started
