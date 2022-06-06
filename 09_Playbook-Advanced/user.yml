@@ -1,0 +1,9 @@
+---
+-
+  name: Create users
+  hosts: web1
+  tasks:
+  -
+    name: Create a user 
+    user:
+      name: angel

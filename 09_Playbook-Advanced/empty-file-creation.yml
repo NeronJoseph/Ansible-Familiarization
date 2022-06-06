@@ -1,0 +1,10 @@
+---
+-
+  name: "File Creation"
+  hosts: web1
+  tasks: 
+    - 
+      name: "Create an empty file"
+      file:
+        path: "/root/myfile.txt"
+        state: touch
