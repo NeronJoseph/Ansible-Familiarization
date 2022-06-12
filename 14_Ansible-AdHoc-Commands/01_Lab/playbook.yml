@@ -1,0 +1,7 @@
+---
+-
+  name: "Print release details"
+  hosts: all
+  tasks:
+    -
+      command: cat /etc/redhat-release
