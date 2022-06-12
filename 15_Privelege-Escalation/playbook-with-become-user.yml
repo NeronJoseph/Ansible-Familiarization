@@ -1,0 +1,11 @@
+---
+-
+  name: Install Nginx 
+  become: True
+  become_user: nginx
+  hosts: all
+  tasks: 
+    -
+      yum:
+        name: nginx 
+        state: latest 

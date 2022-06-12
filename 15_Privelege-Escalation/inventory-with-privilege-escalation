@@ -1,0 +1,1 @@
+lamp-dev ansible_host=172.20.1.100 ansible_user=admin ansible_become=yes ansible_become_user=nginx
