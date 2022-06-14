@@ -1,0 +1,9 @@
+- 
+  name: Install MySQL package
+  << code hidden >>
+-
+  name: Start MySQL Service
+  << code hidden >>
+-
+  name: Configure database
+  << code hidden >>

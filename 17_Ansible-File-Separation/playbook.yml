@@ -1,0 +1,6 @@
+-
+  name: Deploy web and DB server 
+  hosts: web_servers
+  tasks: 
+    - include_tasks: tasks/db.yml
+    - include_tasks: tasks/web.yml
